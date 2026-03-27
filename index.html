@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goose Palace - Premium Goose Cuisine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+  <header>
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <img src="https://i.postimg.cc/d36nM6Pz/Gemini-Generated-Image-uyx32quyx32quyx3.png" alt="Logo" class="logo-img">
+        <div class="logo-text">
+          Goose Palace
+          <span>Premium Goose Cuisine</span>
+        </div>
+      </a>
+
+      <input type="checkbox" id="mobile-menu" class="menu-toggle" hidden>
+      <label for="mobile-menu" class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#menu-popup">Categories</a></li>
+          <li><a href="#specials-popup">Specials</a></li>
+          <li><label for="login-toggle" class="login-btn">Login</label></li>
+          <li class="lang-switch">
+            <span class="lang-btn active">TR</span>
+            <span class="lang-divider">|</span>
+            <span class="lang-btn">ENG</span>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <input type="checkbox" id="login-toggle" hidden>
+  <label for="login-toggle" class="login-overlay"></label>
+
+  <div class="login-popup">
+    <h3>Login</h3>
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
+    <button>Login</button>
+  </div>
+
+  
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-badge">Est. 1985 &bull; Premium Goose Cuisine</div>
+      <h1>Experience the Finest <em>Goose Dishes</em></h1>
+      <p>From traditional roasted goose to gourmet delicacies — crafted with rich flavor, slow cooking techniques, and authentic heritage.</p>
+      <a href="#menu-popup" class="btn-primary">View Menu</a>
+    </div>
+  </section>
+
+ 
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Goose Palace</h3>
+        <p>Serving authentic goose cuisine since 1985. Every plate reflects rich Anatolian traditions and bold flavors.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook">f</a>
+          <a href="#" class="social-link" aria-label="Instagram">in</a>
+          <a href="#" class="social-link" aria-label="Twitter">X</a>
+          <a href="#" class="social-link" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu-popup">Menu</a></li>
+          <li><a href="#specials-popup">Specials</a></li>
+          <li><a href="#">Reservations</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <ul>
+          <li><a href="#">Mon - Fri: 10:00 - 23:00</a></li>
+          <li><a href="#">Saturday: 09:00 - 00:00</a></li>
+          <li><a href="#">Sunday: 09:00 - 22:00</a></li>
+          <li><a href="#">Holidays: 11:00 - 21:00</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li>
+            <span class="fc-icon">📍</span>
+            <span>Sultan's Avenue No. 42, Beyoğlu, Istanbul, Turkey</span>
+          </li>
+          <li>
+            <span class="fc-icon">📞</span>
+            <span>+90 212 555 1985</span>
+          </li>
+          <li>
+            <span class="fc-icon">✉️</span>
+            <span>info@goosepalace.com</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Goose Palace. All rights reserved. Crafted with ♥ in Istanbul.</p>
+    </div>
+  </footer>
+
+
+  <div id="menu-popup" class="modal">
+    <a href="#" class="overlay"></a>
+    <div class="modal-content">
+      <a href="#" class="close-btn">&times;</a>
+      
+      <div class="menu-header">
+        <h2>Our Menu</h2>
+        <p>Explore our carefully crafted selection of goose delights</p>
+        <div class="menu-divider">
+          <span></span>
+          <i>✦</i>
+          <span></span>
+        </div>
+      </div>
+
+      <input type="radio" name="category" id="cat-hot-drinks" class="category-radios">
+      <input type="radio" name="category" id="cat-hot-meals" class="category-radios" checked>
+      <input type="radio" name="category" id="cat-cold-meals" class="category-radios">
+      <input type="radio" name="category" id="cat-cold-drinks" class="category-radios">
+      <input type="radio" name="category" id="cat-desserts" class="category-radios">
+      <input type="radio" name="category" id="cat-pastries" class="category-radios">
+      <input type="radio" name="category" id="cat-alternative" class="category-radios">
+
+      <div class="menu-body">
+        
+        <aside class="sidebar">
+          <h3 class="sidebar-title">Categories</h3>
+          <label for="cat-hot-drinks"><span class="cat-icon">☕</span> Hot Drinks</label>
+          <label for="cat-hot-meals"><span class="cat-icon">🍖</span> Hot Meals</label>
+          <label for="cat-cold-meals"><span class="cat-icon">🥗</span> Cold Meals</label>
+          <label for="cat-cold-drinks"><span class="cat-icon">🧊</span> Cold Drinks</label>
+          <label for="cat-desserts"><span class="cat-icon">🍮</span> Desserts</label>
+          <label for="cat-pastries"><span class="cat-icon">🥐</span> Pastries</label>
+          <label for="cat-alternative"><span class="cat-icon">🌿</span> Alternative Products</label>
+        </aside>
+
+        <!-- menü -->
+        <div class="menu-grid-wrapper">
+          <div class="menu-grid">
+            
+            <!-- sıcak yemekler -->
+            <div class="menu-item hot-meals">
+              <div class="card-img-wrap">
+                <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=400&h=300&fit=crop&q=80" alt="Slow Roasted Goose">
+                <span class="card-badge badge-popular">Popular</span>
+              </div>
+              <div class="card-body">
+                <h3>Slow Roasted Goose</h3>
+                <p class="desc">Tender goose slow-roasted for 8 hours with herbs and spices</p>
+                <div class="card-footer">
+                  <span class="price"><small>₺</small>320</span>
+                  <a href="#" class="btn-order">Order</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item hot-meals">
+              <div class="card-img-wrap">
+                <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400&h=300&fit=crop&q=80" alt="Goose Kebab">
+                <span class="card-badge badge-chef">Chef's Special</span>
+              </div>
+              <div class="card-body">
+                <h3>Goose Kebab</h3>
+                <p class="desc">Juicy goose meat skewered and grilled over charcoal</p>
+                <div class="card-footer">
+                  <span class="price"><small>₺</small>280</span>
+                  <a href="#" class="btn-order">Order</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item hot-meals">
+              <div class="card-img-wrap">
+                <img src="https://images.unsplash.com/photo-1574484284002-952d92456975?w=400&h=300&fit=crop&q=80" alt="Goose Stew">
+              </div>
+              <div class="card-body">
+                <h3>Traditional Goose Stew</h3>
+                <p class="desc">Rich slow-cooked goose with vegetables in clay pot</p>
+                <div class="card-footer">
+                  <span class="price"><small>₺</small>260</span>
+                  <a href="#" class="btn-order">Order</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item hot-meals">
+              <div class="card-img-wrap">
+                <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=400&h=300&fit=crop&q=80" alt="Goose Pilav">
+              </div>
+              <div class="card-body">
+                <h3>Goose Pilav</h3>
+                <p class="desc">Butter rice topped with shredded goose meat</p>
+                <div class="card-footer">
+                  <span class="price"><small>₺</small>210</span>
+                  <a href="#" class="btn-order">Order</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- soğuk yemekler -->
+            <div class="menu-item cold-meals">
+              <div class="card-img-wrap">
+                <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=400&h=300&fit=crop&q=80" alt="Goose Salad">
+                <span class="card-badge badge-new">New</span>
+              </div>
+              <div class="card-body">
+                <h3>Smoked Goose Salad</h3>
+                <p class="desc">Fresh greens with smoked goose slices and walnut dressing</p>
+                <div class="card-footer">
+                  <span class="price"><small>₺</small>180</span>
+                  <a href="#" class="btn-order">Order</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <!-- Specials -->
+  <div id="specials-popup" class="modal">
+    <a href="#" class="overlay"></a>
+    <div class="modal-content">
+      <a href="#" class="close-btn">&times;</a>
+      
+      <div class="menu-header">
+        <h2>Chef's Specials</h2>
+        <p>Limited-time signature dishes curated by our head chef</p>
+        <div class="menu-divider">
+          <span></span>
+          <i>✦</i>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="specials-grid">
+        <div class="special-card">
+          <div class="special-img-wrap">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=500&h=350&fit=crop&q=80" alt="Whole Goose">
+            <div class="special-ribbon">Limited</div>
+          </div>
+          <div class="special-body">
+            <h3>Whole Royal Goose Feast</h3>
+            <p>Whole goose roasted with honey glaze, serves 4-6 people.</p>
+            <div class="special-footer">
+              <span class="special-price">₺950</span>
+              <a href="#" class="btn-order">Order</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="special-card">
+          <div class="special-img-wrap">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=500&h=350&fit=crop&q=80" alt="Mixed Grill">
+            <div class="special-ribbon">Weekend</div>
+          </div>
+          <div class="special-body">
+            <h3>Goose Grill Mix</h3>
+            <p>Combination of goose kebab, wings, and roasted cuts</p>
+            <div class="special-footer">
+              <span class="special-price">₺520</span>
+              <a href="#" class="btn-order">Order</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="special-card">
+          <div class="special-img-wrap">
+            <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=500&h=350&fit=crop&q=80" alt="Breakfast">
+            <div class="special-ribbon">Brunch</div>
+          </div>
+          <div class="special-body">
+            <h3>Goose Breakfast Deluxe</h3>
+            <p>Eggs, goose sausage, cheeses, and unlimited tea</p>
+            <div class="special-footer">
+              <span class="special-price">₺420</span>
+              <a href="#" class="btn-order">Order</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
